@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- first step to a responsive site -->
-    <title>How Much Plastic Do You Use Compared to the Average American</title>
+    <title>Plastic Consumption Personalization</title>
 
     <!-- FONT AWESOME -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -32,21 +32,21 @@
       <!-- The background photo is in the stylesheet -->
       <div class="image">
         <div class="section-wrap">
-          <h1 class="landing-page"><span class="subhead">
-              How Much Plastic Do You Use Compated to the Average American
+          <h1 class="landing-page">Plastic Personalization<span class="subhead">
+              How much plastic are you using?
             </span></h1>
 
           <!-- <span class="intro-text"> -->
           <div class="billboard-text">
             <p>
-              Some super interesting blurb that will totally draw in your reader.
+              Intro about plastic.
             </p>
-            <p>Are you ready to see how you stack up? </p>
+            <p>Are you ready to find out?</p>
           </div>
           <!-- </span> -->
           <!-- <input type="button" id="go" value="Go Now" /> -->
           <form>
-            <input type="button" id="start" class="start-btn" value="Begin" data-id="plastic-bags" data-color="#BF7530" />
+            <input type="button" id="start" class="start-btn" value="Begin" id="familyYes_btn" data-id="plastic-bags" data-color="#BF7530" />
           </form>
         </div>
       </div>
@@ -54,83 +54,87 @@
     </div>
     <!-- Closes div class landing-->
 
-    <!-- Plastic bags-->
-    <div class="choices hide" id="plastic-bags">
+    <!-- Plastic bags -->
+    <div class="choices hide" id="plastic-bags-background">
       <section class="choices hide" id="plastic-bags">
         <section class="text">
-          <h1>On average, how many plastic bags do you use each week?</h1>
+          <h1>Plastic Bags</h1>
+          <p> Blurb about plastic bags </p>
           <p>
-            Blurb about how plastic bags kill seat turtles
+            On average, how many plastic bags do you use each week?
           </p>
 
-          <input type="number" min="0" placeholder="# of plastic bags/week" class="steps-btn" id="straws_btn" data-id="straws" data-color="#AC9320" />
+          <input type="number" class="steps-btn" value="# of bags" id="straws_btn" data-id="straws" data-color="#AC9320" />
         </section>
       </section>
     </div>
 
-    <!-- Plastic straws-->
-    <div class="choices hide" id="plastic-straws">
+    <!-- Plastic Straws-->
+    <div class="choices hide" id="straws-background">
       <section class="choices hide" id="straws">
         <section class="text">
-          <h1>On average, how many plastic straws do you use in a week?</h1>
-          <p>Blub on how plastic straws kill sea turtles</p>
-          <input type="number" min="0" placeholder="# of plastic straws/week" class="steps-btn" data-id="styrofoam" data-color="#BFADFF" />
+          <h1>Plastic Straws</h1>
+          <p>blurb about plastic straws</p>
+          <p>On average, how many plastic straws do you use in a week?</p>
+          <input type="number" class="steps-btn" value="# of straws" data-id="styrofoam" data-color="#BFADFF" />
         </section>
       </section>
     </div>
-
     <!-- Styrofoam -->
-    <div class="choices hide" id="styrofoam">
+    <div class="choices hide" id="styrofoam-background">
       <section class="choices hide" id="styrofoam">
         <section class="text">
-          <h1>On average, how many styrofoam containers do you use in a week?</h1>
+          <h1>Styrofoam</h1>
+          <p>Blurb about styrofoam </p>
           <p>
-            Blurb about bad styrofoam
+            On average, how many styrofoam containers or cups do you use in a week?
           </p>
-          <input type="number" min="0" placeholder="styrofoam/week" class="steps-btn" id="plastic-bottles" data-id="plastic-bottles" data-color="#AC9320" />
+          <input type="number" class="steps-btn" value="# of styrofoam" id="water_btn" data-id="water" data-color="#AC9320" />
         </section>
       </section>
     </div>
 
-    <!-- Plastic bottles -->
-    <div class="choices hide" id="plastic-bottles">
-      <section class="choices hide" id="plastic-bottles">
+    <!--water bottles-->
+    <div class="choices hide" id="water-background">
+      <section class="choices hide" id="water">
         <section class="text">
-          <h1>On average, how many plastic water bottles do you use a week?</h1>
+          <h1>Water Bottles</h1>
+          <p>Blurb about water bottles</p>
           <p>
-            Blub about water bottles
+            On average, how many plastic water bottles do you use in a week?
           </p>
-          <input type="number" min="0" placeholder="# of plastic bottles/week" class="steps-btn" id="help_btn" data-id="plastic-utensils" data-color="#d3afe0" />
+          <input type="number" class="steps-btn" value="Yes" id="help_btn" data-id="utensils" data-color="#d3afe0" />
         </section>
       </section>
     </div>
 
-    <!-- Plastic utensils -->
-    <div class="choices hide" id="plastic-utensils">
-      <section class="choices hide" id="plastic-utensils">
+    <!--utensils-->
+    <div class="choices hide" id="utensils-background">
+      <section class="choices hide" id="utensils">
         <section class="text">
-          <h1>On average, how many plastic untensils do you use a week?</h1>
+          <h1>Utensils</h1>
+          <p>Blurb about plastic utensils</p>
           <p>
-            Blub about plastic utensils
+            On average, how many plastic utensils do you use in a week?
           </p>
-          <input type="number" min="0" placeholder="# of plastic utensils/week" class="steps-btn" id="help_btn" data-id="total-calculated" data-color="#d3afe0" />
+          <input type="number" class="steps-btn" value="# of utensils" id="help_btn" data-id="total" data-color="#d3afe0" />
         </section>
       </section>
     </div>
 
-    <!-- Total compared  -->
-    <div class="choices hide" id="total-calculated">
-      <section class="choices hide" id="total-calculated">
+    <!-- Active breeds -->
+    <div class="choices hide" id="total-background">
+      <section class="choices hide" id="total">
         <section class="text">
-          <h1>How do you compare to the average American?</h1>
-          <p>TEXT GOES HERE
+          <h1>How do you stack up </h1>
+          <p>Blurb about the average American's plastic consumptions
           </p>
+          <p>How much plastic do you use in a year?</p>
 
           <input type="button" class="restart-btn" value="Start Over" />
         </section>
       </section>
     </div>
-
 
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
