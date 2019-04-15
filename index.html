@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>How Much Plastic Do You Use Compared to the Average American</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+
+
+    <div class="intro">
+      <!-- The background photo is in the stylesheet -->
+      <div class="image">
+        <div class="section-wrap">
+          <h1 class="landing-page"><span class="subhead">
+              How Much Plastic Do You Use Compated to the Average American
+            </span></h1>
+
+          <!-- <span class="intro-text"> -->
+          <div class="billboard-text">
+            <p>
+              Some super interesting blurb that will totally draw in your reader.
+            </p>
+            <p>Are you ready to see how you stack up? </p>
+          </div>
+          <!-- </span> -->
+          <!-- <input type="button" id="go" value="Go Now" /> -->
+          <form>
+            <input type="button" id="start" class="start-btn" value="Begin" data-id="plastic-bags" data-color="#BF7530" />
+          </form>
+        </div>
+      </div>
+      <!-- end section-wrap-->
+    </div>
+    <!-- Closes div class landing-->
+
+    <!-- Plastic bags-->
+    <div class="choices hide" id="plastic-bags">
+      <section class="choices hide" id="plastic-bags">
+        <section class="text">
+          <h1>On average, how many plastic bags do you use each week?</h1>
+          <p>
+            Blurb about how plastic bags kill seat turtles
+          </p>
+
+          <input type="number" min="0" placeholder="# of plastic bags/week" class="steps-btn" id="straws_btn" data-id="straws" data-color="#AC9320" />
+        </section>
+      </section>
+    </div>
+
+    <!-- Plastic straws-->
+    <div class="choices hide" id="plastic-straws">
+      <section class="choices hide" id="straws">
+        <section class="text">
+          <h1>On average, how many plastic straws do you use in a week?</h1>
+          <p>Blub on how plastic straws kill sea turtles</p>
+          <input type="number" min="0" placeholder="# of plastic straws/week" class="steps-btn" data-id="styrofoam" data-color="#BFADFF" />
+        </section>
+      </section>
+    </div>
+
+    <!-- Styrofoam -->
+    <div class="choices hide" id="styrofoam">
+      <section class="choices hide" id="styrofoam">
+        <section class="text">
+          <h1>On average, how many styrofoam containers do you use in a week?</h1>
+          <p>
+            Blurb about bad styrofoam
+          </p>
+          <input type="number" min="0" placeholder="styrofoam/week" class="steps-btn" id="plastic-bottles" data-id="plastic-bottles" data-color="#AC9320" />
+        </section>
+      </section>
+    </div>
+
+    <!-- Plastic bottles -->
+    <div class="choices hide" id="plastic-bottles">
+      <section class="choices hide" id="plastic-bottles">
+        <section class="text">
+          <h1>On average, how many plastic water bottles do you use a week?</h1>
+          <p>
+            Blub about water bottles
+          </p>
+          <input type="number" min="0" placeholder="# of plastic bottles/week" class="steps-btn" id="help_btn" data-id="plastic-utensils" data-color="#d3afe0" />
+        </section>
+      </section>
+    </div>
+
+    <!-- Plastic utensils -->
+    <div class="choices hide" id="plastic-utensils">
+      <section class="choices hide" id="plastic-utensils">
+        <section class="text">
+          <h1>On average, how many plastic untensils do you use a week?</h1>
+          <p>
+            Blub about plastic utensils
+          </p>
+          <input type="number" min="0" placeholder="# of plastic utensils/week" class="steps-btn" id="help_btn" data-id="total-calculated" data-color="#d3afe0" />
+        </section>
+      </section>
+    </div>
+
+    <!-- Total compared  -->
+    <div class="choices hide" id="total-calculated">
+      <section class="choices hide" id="total-calculated">
+        <section class="text">
+          <h1>How do you compare to the average American?</h1>
+          <p>TEXT GOES HERE
+          </p>
+
+          <input type="button" class="restart-btn" value="Start Over" />
+        </section>
+      </section>
+    </div>
+
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>

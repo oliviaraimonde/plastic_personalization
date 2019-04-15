@@ -1,0 +1,238 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Start your base/mobile styles here */
+html, body {
+    font-size: 16px;
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    height: 100%;
+    width: 100%
+        /*overflow: hidden;*/
+        padding: 0px;
+}
+
+/* The landing page is styled differently than the individual paths */
+.intro {
+    /* font: 1.1em "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif; */
+    width: 100%;
+    /*padding: 10px;*/
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 400px;
+    height: 100%;
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+    overflow: auto;
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-image: url(img/dogs.jpg);
+}
+
+/* Creates the gray overlay on top of image */
+.section-wrap {
+    overflow: auto;
+    padding: 2%;
+    width: 86%;
+    display: block;
+    margin: 3% auto 2%;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'georgia';
+    top: 10%;
+    left: 10%;
+}
+
+/* styling for headlines and subheads and text on landing page */
+.landing-page {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subhead {
+    font-family: 'Helvetica';
+    font-size: .6em;
+    display: block;
+    padding: 10px;
+    margin-top: 2%;
+    text-transform: none;
+    text-align: left;
+}
+
+.billboard-text p {
+    display: block;
+    margin-top: 1%;
+    text-transform: none;
+    font-size: 1.0em;
+    line-height: 1.2em;
+    font-weight: normal;
+    padding: 10px 0px 0px 0px;
+}
+
+/* styles button on landing page, different than other buttons. */
+input.start-btn {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 15% auto 1%;
+    display: block;
+    padding: 2% 5%;
+    border: 1px solid #fff;
+    background: transparent;
+}
+
+.text {
+    width: 90%;
+}
+
+h3 {
+    margin-top: 12%;
+    margin-bottom: 10%;
+}
+
+/* styling buttons in the paths */
+.steps-btn, .restart-btn {
+    background-color: #56C0E0;
+    padding: 10px 20px 10px 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Arial';
+    /*font-size: .85em !important;*/
+    text-decoration: none;
+    cursor: poiner;
+    border: none;
+}
+
+/* hiding and revealing various paths */
+h1.hidden {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.hide.active {
+    display: block;
+}
+
+/* all divs below the landing page are hidden and revealed when btn clicked */
+.choices, .choices-background {
+    background-color: #B3CCCC;
+    width: 100%;
+    padding: 10px 10px 50px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font: 1.1em "georgia";
+    overflow: hidden;
+    min-height: 100vh;
+    line-height: 1.5em;
+}
+
+.choices p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.choices-background {
+    padding-top: 10px;
+}
+
+/* Tablet/Desktop overrides */
+@media only screen and (min-width: 481px) and (max-width:768px) {
+
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .landing-page {
+        font-size: 3.5em;
+    }
+
+    p.billboard-text {
+        line-height: 1.5em;
+        font-size: 1.2em;
+    }
+
+    input.start-btn {
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+
+    .text {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media(min-width: 771px) {
+
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .section-wrap {
+        width: 40%;
+    }
+
+    p.billboard-text {
+        font-size: 1.25em;
+    }
+
+    .text {
+        width: 500px;
+        margin: auto;
+    }
+}
