@@ -27,3 +27,17 @@ function scrollyUp() {
 		scrollTop: $(".intro").offset().top + "px"
 	});
 }
+$(".calc-btn").on("click", function (e) {
+	get_number();
+	total_plastic();
+})
+
+function get_number() {
+	numberOfPlasticBags = parseFloat($("#plasticBagsNumber").val());
+	console.log(numberOfPlasticBags);
+}
+
+function total_plastic() {
+	totalPlastic = numberOfPlasticBags * 10;
+	console.log(totalPlastic)
+} //repeat for the other four and multiply by 52
