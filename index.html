@@ -46,7 +46,7 @@
           <!-- </span> -->
           <!-- <input type="button" id="go" value="Go Now" /> -->
           <form>
-            <input type="button" id="start" class="start-btn" value="Begin" id="familyYes_btn" data-id="plastic-bags" data-color="#BF7530" />
+            <input type="submit" id="start" class="start-btn" value="Begin" id="familyYes_btn" data-id="plastic-bags" data-color="#BF7530" />
           </form>
         </div>
       </div>
@@ -63,8 +63,11 @@
           <p>
             On average, how many plastic bags do you use each week?
           </p>
-          <input type="number" id="plasticBagsNumber" min="0" placeholder="# of plastic bags" />
-          <input type="button" class="steps-btn calc-btn" value="continue" id="straws_btn" data-id="straws" data-color="#AC9320" />
+          <form class="personalUse" id="plasticBags">
+            <input type="number" id="plasticBagsNumber" min="0" placeholder="# of plastic bags" />
+            <input type="submit" class="steps-btn calc-btn" value="continue" id="straws_btn" data-id="straws" data-color="#AC9320" />
+            <input type="hidden" value="10" name="weight" />
+          </form>
         </section>
       </section>
     </div>
@@ -107,8 +110,10 @@
           <p>
             On average, how many plastic water bottles do you use in a week?
           </p>
-          <input type="number" min="0" placeholder="# of plastic water bottles" />
-          <input type="button" class="steps-btn" value="continue" id="help_btn" data-id="utensils" data-color="#d3afe0" />
+          <form class="personalUse" id="waterBottle">
+            <input type="number" min="0" placeholder="# of plastic water bottles" />
+            <input type="button" class="steps-btn" value="continue" id="help_btn" data-id="utensils" data-color="#d3afe0" />
+          </form>
           <p class="bottles_total">$<span></span></p>
         </section>
       </section>
@@ -139,9 +144,9 @@
           </p>
           <p>How much plastic do you use in a year?</p>
           <p>My plastic consumption:</p>
-          <p class="my_total">$<span></span></p>
+          <p id="my_total"><span></span></p>
           <p>The average American's plastic consumption:</p>
-          <p class="american_total">$<span></span></p>
+          <p class="american_total"><span></span></p>
           <input type="button" class="restart-btn" value="Start Over" />
         </section>
       </section>
