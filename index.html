@@ -46,7 +46,7 @@
           <!-- </span> -->
           <!-- <input type="button" id="go" value="Go Now" /> -->
           <form>
-            <input type="submit" id="start" class="start-btn" value="Begin" id="familyYes_btn" data-id="plastic-bags" data-color="#BF7530" />
+            <input type="submit" id="start" class="start-btn" value="Begin" data-id="plastic-bags" data-color="#BF7530" />
           </form>
         </div>
       </div>
@@ -56,16 +56,16 @@
 
     <!-- Plastic bags -->
     <div class="choices hide" id="plastic-bags-background">
-      <section class="choices hide" id="plastic-bags">
+      <section class="choices hide">
         <section class="text">
           <h1>Plastic Bags</h1>
           <p> Blurb about plastic bags </p>
           <p>
             On average, how many plastic bags do you use each week?
           </p>
-          <form class="personalUse" id="plasticBags">
-            <input type="number" id="plasticBagsNumber" min="0" placeholder="# of plastic bags" />
-            <input type="submit" class="steps-btn calc-btn" value="continue" id="straws_btn" data-id="straws" data-color="#AC9320" />
+          <form>
+            <input type="number" min="0" placeholder="# of plastic bags" />
+            <input type="submit" class="steps-btn" value="continue" data-color="#AC9320" />
             <input type="hidden" value="10" name="weight" />
           </form>
         </section>
@@ -74,79 +74,84 @@
 
     <!-- Plastic Straws-->
     <div class="choices hide" id="straws-background">
-      <section class="choices hide" id="straws">
+      <section class="choices hide">
         <section class="text">
           <h1>Plastic Straws</h1>
           <p>blurb about plastic straws</p>
           <p>On average, how many plastic straws do you use in a week?</p>
-          <input type="number" min="0" placeholder="# of straws" />
-          <input type="button" class="steps-btn" value="continue" data-id="styrofoam" data-color="#BFADFF" />
-          <p class="straws_total">$<span></span></p>
+          <form>
+            <input type="number" min="0" placeholder="# of straws" />
+            <input type="submit" class="steps-btn" value="continue" data-color="#BFADFF" />
+            <input type="hidden" value="10" name="weight" />
+          </form>
         </section>
       </section>
     </div>
     <!-- Styrofoam -->
     <div class="choices hide" id="styrofoam-background">
-      <section class="choices hide" id="styrofoam">
+      <section class="choices hide">
         <section class="text">
           <h1>Styrofoam</h1>
           <p>Blurb about styrofoam </p>
           <p>
             On average, how many styrofoam containers or cups do you use in a week?
           </p>
-          <input type="number" min="0" placeholder="# of styrofoam items" />
-          <input type="button" class="steps-btn" value="continue" id="water_btn" data-id="water" data-color="#AC9320" />
-          <p class="styrofoam_total">$<span></span></p>
+          <form>
+            <input type="number" min="0" placeholder="# of styrofoam items" />
+            <input type="submit" class="steps-btn" value="continue" data-color="#AC9320" />
+            <input type="hidden" value="10" name="weight" />
+          </form>
         </section>
       </section>
     </div>
 
     <!--water bottles-->
     <div class="choices hide" id="water-background">
-      <section class="choices hide" id="water">
+      <section class="choices hide">
         <section class="text">
           <h1>Water Bottles</h1>
           <p>Blurb about water bottles</p>
           <p>
             On average, how many plastic water bottles do you use in a week?
           </p>
-          <form class="personalUse" id="waterBottle">
+          <form>
             <input type="number" min="0" placeholder="# of plastic water bottles" />
-            <input type="button" class="steps-btn" value="continue" id="help_btn" data-id="utensils" data-color="#d3afe0" />
+            <input type="submit" class="steps-btn" value="continue" data-color="#d3afe0" />
+            <input type="hidden" value="10" name="weight" />
           </form>
-          <p class="bottles_total">$<span></span></p>
         </section>
       </section>
     </div>
 
     <!--utensils-->
     <div class="choices hide" id="utensils-background">
-      <section class="choices hide" id="utensils">
+      <section class="choices hide">
         <section class="text">
           <h1>Utensils</h1>
           <p>Blurb about plastic utensils</p>
           <p>
             On average, how many plastic utensils do you use in a week?
           </p>
-          <input type="number" min="0" placeholder="# of utensils" />
-          <input type="button" class="steps-btn" value="continue" id="help_btn" data-id="total" data-color="#d3afe0" />
-          <p class="utensils_total">$<span></span></p>
+          <form>
+            <input type="number" min="0" placeholder="# of utensils" />
+            <input type="submit" class="steps-btn" value="continue" data-color="#d3afe0" />
+            <input type="hidden" value="10" name="weight" />
+          </form>
         </section>
       </section>
     </div>
 
     <!-- Total -->
     <div class="choices hide" id="total-background">
-      <section class="choices hide" id="total">
+      <section class="choices hide">
         <section class="text">
           <h1>How do you stack up </h1>
           <p>Blurb about the average American's plastic consumption
           </p>
           <p>How much plastic do you use in a year?</p>
           <p>My plastic consumption:</p>
-          <p id="my_total"><span></span></p>
-          <p>The average American's plastic consumption:</p>
-          <p class="american_total"><span></span></p>
+          <p id="my_total"><span></span> lbs</p>
+          <p> Average American: 214.7 lbs of plastic per year </p>
           <input type="button" class="restart-btn" value="Start Over" />
         </section>
       </section>
