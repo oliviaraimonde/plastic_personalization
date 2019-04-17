@@ -176,7 +176,6 @@ h1.hidden {
 
 /* all divs below the landing page are hidden and revealed when btn clicked */
 .choices, .choices-background {
-    background-color: #B3CCCC;
     width: 100%;
     padding: 10px 10px 50px 10px;
     margin-left: auto;
@@ -194,6 +193,34 @@ h1.hidden {
 
 .choices-background {
     padding-top: 10px;
+}
+
+#start {
+    background-color: #BF7530;
+}
+
+#plastic-bags-background {
+    background-color: #AC9320;
+}
+
+#straws-background {
+    background-color: #BFADFF;
+}
+
+#styrofoam-background {
+    background-color: #d3afe0;
+}
+
+#water-background {
+    background-color: #d3afe0;
+}
+
+#utensils-background {
+    background-color: #d3afe0;
+}
+
+#total-background {
+    background-color: #d3afe0;
 }
 
 /* Tablet/Desktop overrides */
