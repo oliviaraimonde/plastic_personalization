@@ -1,21 +1,5 @@
 let grand_total = 0;
 
-// $("body").on("click", ".start-btn,.steps-btn", function (e) {
-// 	e.preventDefault(); //have to add this so we don't get weird behavior in older browers (IE)
-// 	const myPath = $(this), //this button clicked
-// 		mySlide = myPath.data('id'), //grab id info in the data attriburte data-id
-// 		mySlideBackground = mySlide + "-background", //convert to bakground id
-// 		mySlideColor = myPath.data('color'); //grab volor in data attribute data-color
-// 	console.log(mySlide);
-// 	console.log(mySlideBackground);
-// 	console.log(mySlideColor);
-// 	$("#" + mySlideBackground).addClass('active').css("background-color", mySlideColor)
-// 	$("#" + mySlide).addClass('active').css("background-color", mySlideColor)
-// 	$('html, body').animate({ //body and html because different browers
-// 		scrollTop: $("#" + mySlideBackground).offset().top
-// 	}, 400);
-// });
-
 //return to top
 $("body").on("click", ".restart-btn", function (e) {
 	e.preventDefault() //had to add this so we don't get weird behavior in older browsers
@@ -31,20 +15,7 @@ function scrollyUp() {
 }
 
 $("body").on("submit", "form", function (e) {
-	e.preventDefault();
-
-	// const myPath = $(this), //this button clicked
-	// 	mySlide = myPath.data('id'), //grab id info in the data attriburte data-id
-	// 	mySlideBackground = mySlide + "-background", //convert to bakground id
-	// 	mySlideColor = myPath.data('color'); //grab volor in data attribute data-color
-	// console.log(mySlide);
-	// console.log(mySlideBackground);
-	// console.log(mySlideColor);
-	// $("#" + mySlideBackground).addClass('active').css("background-color", mySlideColor)
-	// $("#" + mySlide).addClass('active').css("background-color", mySlideColor)
-	// $('html, body').animate({ //body and html because different browers
-	// 	scrollTop: $("#" + mySlideBackground).offset().top
-	// }, 400);
+	e.preventDefault(); //this is where the calculator stuff begins
 
 	const $this_slide = $(this).closest("div.choices, .intro"),
 		$next_slide = $this_slide.nextAll("div.choices").eq(0),
@@ -59,7 +30,7 @@ $("body").on("submit", "form", function (e) {
 		const slide_total = number * weight;
 
 		grand_total = grand_total + slide_total;
-		let annual_total = grand_total * 52;
+		let annual_total = grand_total * 52; //math for calucator
 
 		console.log("number:", number);
 		console.log("weight:", weight);
@@ -81,19 +52,4 @@ function goToSlide($slide) {
 	$("html, body").animate({
 		scrollTop: $slide.offset().top + "px"
 	}, 400);
-}
-
-// $(".calc-btn").on("click", function (e) {
-// 	get_number();
-// 	total_plastic();
-// });
-//
-// function get_number() {
-// 	numberOfPlasticBags = parseFloat($("#plasticBagsNumber").val());
-// 	console.log(numberOfPlasticBags);
-// } //repeat for all four
-//
-// function total_plastic() {
-// 	totalPlastic = numberOfPlasticBags * 10;
-// 	console.log(totalPlastic)
-// } //input other four values and multiply by 52
+} //DRYer way to move through slides and calcule at the same time
