@@ -52,4 +52,4 @@ function goToSlide($slide) {
 	$("html, body").animate({
 		scrollTop: $slide.offset().top + "px"
 	}, 400);
-} //DRYer way to move through slides and calcule at the same time
+} //DRYer way to move through slides and calculate at the same time
